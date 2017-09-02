@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE hibernate-configuration PUBLIC  
+              "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+              "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="connection.url">jdbc:postgresql://localhost:5433/postgres</property>
+		<property name="connection.username">postgres</property>
+		<property name="connection.password">sharmistha</property>
+		<property name="connection.driver_class">org.postgresql.Driver</property>
+		<property name="hbm2ddl.auto">validate</property>
+		<property name="show_sql">true</property>
+		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+		<!-- <property name="hibernate.format_sql">true</property> -->
+		<!-- Enable 2nd level cache -->
+		<property name="cache.use_second_level_cache">true</property>
+		<property name="cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+		<!-- <property name="generate_statistics">true</property> -->
+		<!-- Disable the second-level cache -->
+		<!-- <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property> -->
+
+
+		<mapping class="com.hibernate.model.Employee" />
+		<mapping class="com.hibernate.model.Vehicle" />
+		<mapping class="com.hibernate.model.TwoWheeler" />
+		<mapping class="com.hibernate.model.FourWheeler" />
+
+	</session-factory>
+
+</hibernate-configuration>  
