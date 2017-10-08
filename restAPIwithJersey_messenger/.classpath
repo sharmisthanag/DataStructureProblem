@@ -22,12 +22,12 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/sharmistha/Jars/NewJars/RestAPIWithJersy/javax.ws.rs-api-2.0-m10.jar">
+	<classpathentry kind="lib" path="D:/Jar/RestAPI/javax.ws.rs-api-2.0-m10.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/sharmistha/Jars/NewJars/Servlet/javax.servlet-api-3.1.0.jar">
+	<classpathentry kind="lib" path="D:/Jar/JavaServletApi/javax.servlet-api-3.1.0.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>

@@ -24,7 +24,7 @@ public class ComparableImplementaion {
 		l1.add(new Employee(9,"0D"));
 		Collections.sort(l1, new SortEmployeeBasedOnName());
 		System.out.println(l1);
-		l1.forEach();
+		//l1.forEach();
 		
 	}
 

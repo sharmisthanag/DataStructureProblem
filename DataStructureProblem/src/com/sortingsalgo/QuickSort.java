@@ -12,7 +12,7 @@ public class QuickSort {
 
 	public static void main(String[] args) {
 		int s=10;
-		Integer[] arr={0,4,8,9,1,6,2,2,7,9,1,11,23,0,0};
+		Integer[] arr={1};
 		System.out.println("before quicksort sort"+Arrays.deepToString(arr));
 		quicksort(arr,0,arr.length-1);
 		System.out.println("after quicksort sort"+Arrays.deepToString(arr));
