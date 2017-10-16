@@ -11,7 +11,7 @@ public class ChangingAbstractTo_D_S {
 interface Jumpable{
 	//abstract int maxDistance();
 	
-	static int maxDistance(){
+	public static int maxDistance(){
 	return 200;
 	}
 	

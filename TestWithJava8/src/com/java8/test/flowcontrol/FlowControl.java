@@ -50,7 +50,7 @@ public class FlowControl {
 		
 		switch(day1){
 		default:
-			System.out.println("invalid day");
+			System.out.println("invalid day for default");
 			break;
 			case "MON":
 			case "TUE":
@@ -114,7 +114,7 @@ public class FlowControl {
 		}
 		
 		long daycount=31;
-		/*switch(daycount){//char sort byte int String Integer Short Byte Char allowed inside switch
+		/*switch(daycount){//char short byte int String Integer Short Byte Char allowed inside switch
 		
 		}*/
 		if(daycount == 21 || daycount==90);

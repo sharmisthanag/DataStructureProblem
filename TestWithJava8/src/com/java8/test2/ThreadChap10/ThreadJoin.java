@@ -18,9 +18,9 @@ public class ThreadJoin {
 }
 class ScreenDesign extends Thread {
 	public void run() {
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 50000; i++) {
 			try {
-				Thread.sleep(120);
+				Thread.sleep(10000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -38,7 +38,7 @@ class Developer {
 		try {
 			System.out.println("Waiting for design to complete");
 			design.join(1);//this wait for 1milisec for completion
-			design.join();
+			//design.join();
 			
 			System.out.println("Coding phase start");
 		}

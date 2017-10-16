@@ -1,5 +1,7 @@
 package com.java8.test2.ThreadChap10;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 /*
  *     Declare the class as final so it can’t be extended.
     Make all fields private so that direct access is not allowed.
@@ -28,6 +30,8 @@ final class BirthDate {
 		Date d=(Date) this.birth.clone();
 		System.out.println(d);
 		d=new Date();
+		/*Map m=new HashMap();
+		new HashMap(m);*/
 		return this.birth;
 	}
 	public boolean isOlder(Date other) {
