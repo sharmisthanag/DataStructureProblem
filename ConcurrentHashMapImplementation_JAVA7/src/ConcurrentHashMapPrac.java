@@ -2,6 +2,7 @@
 
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class ConcurrentHashMapPrac {
 	static final int MAXIMUM_CAPACITY = 1 << 30;
@@ -12,7 +13,7 @@ public class ConcurrentHashMapPrac {
 		chm.put("hello", "hello");
 		chm.put("1", "23");
 		chm.get("1");
-		
+		AtomicInteger ai=new AtomicInteger();
 		String s="hh";
 		HashMap hm=new HashMap();
 		int sshift = 0;

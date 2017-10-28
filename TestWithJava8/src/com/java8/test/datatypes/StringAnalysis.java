@@ -16,9 +16,9 @@ public class StringAnalysis {
     public void printStringAnalysis(String s) throws SecurityException,
             IllegalArgumentException, NoSuchFieldException,
             IllegalAccessException {
-        System.out.println(showInternalCharArrayHashCode(s));
+        System.out.println("char[] hashcode:"+showInternalCharArrayHashCode(s));
 
-        System.out.println(System.identityHashCode(s));
+        System.out.println("String hashcode:"+System.identityHashCode(s));
 
     }
 
@@ -30,7 +30,10 @@ public class StringAnalysis {
         String s2 = new String("myTestString");
         String s3 = s1.intern();
         String s4 = "myTestString";
-
+        String s5 = "";
+        String s6 = new String("");
+        
+        s4.toLowerCase();
         System.out.println("Analyse s1");
         sa.printStringAnalysis(s1);
 
@@ -42,6 +45,17 @@ public class StringAnalysis {
 
         System.out.println("Analyse s4");
         sa.printStringAnalysis(s4);
+        
+        System.out.println("Analyse s5");
+        sa.printStringAnalysis(s5);
+        System.out.println("Analyse s6");
+        sa.printStringAnalysis(s6);
+        
+        String s7 = "myTestString";
+        s7.concat(s2);
+        StringBuilder s8=new StringBuilder("ss");s8.append("dd");
+        System.out.println(s7.substring(s7.length()));
+        
 
     }
 
