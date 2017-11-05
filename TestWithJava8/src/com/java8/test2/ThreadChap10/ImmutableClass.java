@@ -3,7 +3,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 /*
- *     Declare the class as final so it can’t be extended.
+ *  Declare the class as final so it can’t be extended.
     Make all fields private so that direct access is not allowed.
     Don’t provide setter methods for variables
     Make all mutable fields final so that it’s value can be assigned only once.

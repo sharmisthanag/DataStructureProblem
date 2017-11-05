@@ -1,6 +1,6 @@
 package com.interviewquestions_nokia;
 
-public class DebugDeadlock {
+public class DeadlockDebug {
 
 	public static void main(String[] args) throws InterruptedException {
 		Object a=new Object();
@@ -11,7 +11,7 @@ public class DebugDeadlock {
 		DeadLockClass th2=new DeadLockClass(c,a);
 		th.start();th1.start();th2.start();
 		
-		th.wait();
+		//th.wait();
 	}
 
 }

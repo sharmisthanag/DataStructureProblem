@@ -8,6 +8,7 @@ public class WaitWithoutSynchronizedBlock {
 		j.wait();
 		}
 		*/
+		j.wait();
 		
 		Runnable r=new Runnable() {
 			

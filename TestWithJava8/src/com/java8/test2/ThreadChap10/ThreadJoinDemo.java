@@ -1,8 +1,14 @@
 package com.java8.test2.ThreadChap10;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
+import sun.misc.Unsafe;
+
 public class ThreadJoinDemo extends Thread{
 	static ThreadJoinDemo thread1;
 	static Object obj=new Object();
+AtomicInteger ai=new AtomicInteger();
+private static final Unsafe unsafe = Unsafe.getUnsafe();
 
 	public void run(){
 		try{
@@ -23,12 +29,12 @@ public class ThreadJoinDemo extends Thread{
 		thread1.start();
 
 		synchronized(thread1){
-			synchronized(obj) {
+			//synchronized(obj) {
 				System.out.println(Thread.currentThread().getName()+" acquired a lock on thread1");
 				Thread.sleep(1000);
 				thread1.join();
 				System.out.println(Thread.currentThread().getName()+" completed");
-			}
+			//}
 		}
 	}
 }
